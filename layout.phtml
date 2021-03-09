@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <title>Document</title>
+   <!-- <link rel="stylesheet" href="www/css/main.css" type="text/css" />-->
+</head>
+<body>
+    <header>
+        <div class="header-img">
+            <p><a href="index.php"><i class="fas fa-leaf"></i> Osteo JEJE </a></p>
+        </div>
+                <div>
+            <nav>
+                <ul>
+                    <li><a href="controllers/index.php">Home</a></li>
+                    <li><a href="controllers/BioController.php">Page bio</a></li>
+                    <li><a href="controllers/TarifController.php">Tarif</a></li>
+                    <li><a href="controllers/ConseilController.php">Conseil</a></li>
+                    <li><a href="controllers/BookingController.php">RDV</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <a href="controllers/RegisterController.php">s'enregistrer</a>
+            <a href="../controllers/LoginController.php">connexion</a>
+        </div>
+        
+    </div>
+    </header>
+    <main>
+        <!-- Chargement du template PHTML spécifié par le programme PHP -->
+        <?php include 'www/'.$template.'.phtml' ?>
+    </main>
+<footer>
+     <article class="container footer-flex">
+            <div>
+                <p>Osteo JEJE</p>
+                <p>Cabinet de santé Clement Viennot</p>
+                <p>13 rue Clement Viennot</p>
+                <p>94300</p>
+                <p>Vincennes</p>
+            </div>
+            <div>
+                <ul class="flex">
+                    <li><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </article>
+        <article>
+          <div>
+              <nav>
+                <ul>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="#">Page bio</a></li>
+                  <li><a href="#">Tarif</a></li>
+                  <li><a href="#">Conseil</a></li>
+                  <li><a href="#">RDV</a></li>
+                  </ul>
+            </nav>
+          </div>
+        </article>
+    
+</footer>
+    
+</body>
+</html>
